@@ -1,20 +1,75 @@
-<div align="center">
+﻿<div align="center">
 <img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
 </div>
 
-# Run and deploy your AI Studio app
+# ECOMFLOW - Sistema de E-commerce
 
-This contains everything you need to run your app locally.
+Um aplicativo de e-commerce moderno construído com React, TypeScript e Vite para gerenciamento completo de vendas online.
 
-View your app in AI Studio: https://ai.studio/apps/drive/1Rnw7FSzefyJmwyYynPbGbq2n1loZ_7pv
+## Requisitos
 
-## Run Locally
+- Node.js 16+ 
+- npm ou yarn
 
-**Prerequisites:**  Node.js
+## Instalação
 
+1. Clone o repositório:
+   `bash
+   git clone https://github.com/mqsfps1-maker/ECOMFLOW2.git
+   cd ECOMFLOW2
+   `
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+2. Instale as dependências:
+   `ash
+   npm install
+   `
+
+3. Configure as variáveis de ambiente:
+   - Copie o arquivo .env.example para .env.local:
+     `ash
+     cp .env.example .env.local
+     `
+   - Preencha as variáveis de ambiente no arquivo .env.local:
+     - GEMINI_API_KEY: Sua chave de API do Google Gemini
+     - VITE_SUPABASE_URL: URL do seu projeto Supabase
+     - VITE_SUPABASE_ANON_KEY: Chave anônima do Supabase
+
+4. Desenvolvimento local:
+   `ash
+   npm run dev
+   `
+   A aplicação estará disponível em http://localhost:3000
+
+5. Build para produção:
+   `ash
+   npm run build
+   `
+   Os arquivos compilados serão gerados na pasta dist/
+
+6. Preview da build:
+   `ash
+   npm run preview
+   `
+
+## Stack Tecnológico
+
+- **Frontend**: React 19 + TypeScript
+- **Build Tool**: Vite 6
+- **UI Components**: Lucide React
+- **Documentos**: jsPDF + AutoTable
+- **Spreadsheets**: XLSX
+- **Backend**: Supabase
+- **Styling**: Tailwind CSS
+
+## Scripts Disponíveis
+
+- 
+pm run dev - Inicia o servidor de desenvolvimento
+- 
+pm run build - Compila a aplicação para produção
+- 
+pm run preview - Preview da build compilada
+
+## Suporte
+
+Para reportar problemas ou sugerir melhorias, abra uma issue no GitHub.
